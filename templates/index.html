@@ -1,0 +1,11 @@
+{% for post in users %}
+    <div style = "background-color: aquamarine;
+    border-color: black; width: 20%;">
+        <h1>{{post.user_name}}</h1>
+        <p>{{post.password}}</p>
+        <p>{{post.post}}</p>
+        <p>{{post.date}}</p>
+        <p>{{post.email}}</p>
+    </div>
+    {% endfor %}
+    <p><a href="/create/">Create New Post</a></p>
